@@ -22,6 +22,7 @@
 //               countryName: countryInfo.name.common,
 //               flagUrl: countryInfo.flags.png,
 //               currencyName: curName,
+//               currencySymbol: countryInfo.currencies[curName].symbol,
 //             });
 //           }
 //         });
