@@ -123,6 +123,7 @@ body {
   overflow-y: auto;
   z-index: 100;
   cursor: pointer;
+  display: none;
 }
 
 .base-currency-country-options > div,
