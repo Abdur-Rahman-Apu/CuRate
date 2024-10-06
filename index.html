@@ -9,7 +9,9 @@
     <!-- google font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 
     <!-- font awesome  -->
@@ -22,6 +24,74 @@
 </head>
 
 <body>
+
+    <section class="container">
+        <div class="title-logo">
+            <img src="./assets/images/curate-logo.png" alt="This image is the logo of the website">
+            <p class="title">Cu<span>Rate</span></p>
+        </div>
+
+        <div class="choose-country-section">
+            <div class="base-currency">
+                <p class="currency-label">Base currency</p>
+                <div class="selected-base-currency">
+                    <img src="https://flagcdn.com/w320/us.png"
+                        alt="This image is indicating the selected base currency's country flag image"
+                        class="base-currency-flag-image">
+                    <p class="base-currency-country-name">United States</p>
+
+                    <i class="fa-solid fa-caret-down base-currency-down-arrow-icon"></i>
+                </div>
+                <!-- <div class="base-currency-country-options">
+                    <div>
+                        <img src="https://flagcdn.com/w320/us.png"
+                            alt="This image is indicating the selected base currency's country flag image"
+                            class="base-currency-flag-image">
+                        <p class="base-currency-country-name">United States</p>
+                    </div>
+                    <div>
+                        <img src="https://flagcdn.com/w320/bd.png"
+                            alt="This image is indicating the selected target currency's country flag image"
+                            class="target-currency-flag-image">
+                        <p class="target-currency-country-name">Bangladesh</p>
+                    </div>
+                </div> -->
+            </div>
+
+            <img src="./assets/images/currency-exchange.png" alt="This image is indicating the money exchange"
+                class="money-exchange-image">
+
+            <div class="target-currency">
+                <p class="currency-label">Target currency</p>
+                <div class="selected-target-currency">
+                    <img src="https://flagcdn.com/w320/bd.png"
+                        alt="This image is indicating the selected target currency's country flag image"
+                        class="target-currency-flag-image">
+                    <p class="target-currency-country-name">Bangladesh</p>
+
+                    <i class="fa-solid fa-caret-down target-currency-down-arrow-icon"></i>
+                </div>
+                <!-- <div class="target-currency-country-options">
+                    <div>
+                        <img src="https://flagcdn.com/w320/us.png"
+                            alt="This image is indicating the selected base currency's country flag image"
+                            class="target-currency-flag-image">
+                        <p class="target-currency-country-name">United States</p>
+                    </div>
+                    <div>
+                        <img src="https://flagcdn.com/w320/bd.png"
+                            alt="This image is indicating the selected target currency's country flag image"
+                            class="target-currency-flag-image">
+                        <p class="target-currency-country-name">Bangladesh</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="check-button-container">
+            <button class="check-btn">Check Rate</button>
+        </div>
+    </section>
 
 
     <script src="./JS/app.js" type="module"></script>
