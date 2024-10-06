@@ -31,3 +31,9 @@
 //         console.log(data.length, "new updated data");
 //       });
 //   });
+
+import init from "./modules/init/init.js";
+
+(() => {
+  init();
+})();

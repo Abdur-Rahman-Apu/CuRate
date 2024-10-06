@@ -1,7 +1,7 @@
 import { selectElm } from "../utilities/dom/dom.js";
 
 const chooseCountryContainer = selectElm(".choose-country-section");
-const selectedBaseCurrencyContainerChooseSection = selectElm(
+const chooseSectionSelectedBaseCurrencyContainer = selectElm(
   ".selected-base-currency"
 );
 const chooseSectionBaseCurrencyFlagImg = selectElm(".base-currency-flag-image");
@@ -75,6 +75,7 @@ export {
   chooseCountryContainer,
   chooseSectionBaseCurrencyCountryName,
   chooseSectionBaseCurrencyFlagImg,
+  chooseSectionSelectedBaseCurrencyContainer,
   chooseSectionSelectedTargetCurrencyContainer,
   chooseSectionTargetCurrencyCountryName,
   chooseSectionTargetCurrencyFlagImg,
@@ -83,7 +84,6 @@ export {
   convertSectionTargetCurrencyContainer,
   convertSectionTargetCurrencyFlagImg,
   currencyConvertContainer,
-  selectedBaseCurrencyContainerChooseSection,
   targetCurrencyArrowIcon,
   targetCurrencyInput,
   targetCurrencyName,
