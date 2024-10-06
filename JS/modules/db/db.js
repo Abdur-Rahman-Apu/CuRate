@@ -1,14 +1,15 @@
+import currencyAppData from "../config/config.js";
 import {
   getFromLocalStorage,
   setIntoLocalStorage,
-} from "../utilities/storage/storage";
+} from "../utilities/storage/storage.js";
 
 const getDataFromDB = () => {
   return getFromLocalStorage("curat-app");
 };
 
-const setDataIntoDB = (data) => {
-  return setIntoLocalStorage("curat-app", data);
+const setDataIntoDB = () => {
+  return setIntoLocalStorage("curat-app", currencyAppData);
 };
 
 export { getDataFromDB, setDataIntoDB };
