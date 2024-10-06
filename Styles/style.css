@@ -225,6 +225,15 @@ body {
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #ecf0f2;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
 @media (min-width: 360px) {
   .title-logo img {
     width: 45vw;

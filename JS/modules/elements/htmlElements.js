@@ -12,6 +12,10 @@ const chooseSectionBaseCurrencyCountryName = selectElm(
 
 const baseCurrencyArrowIcon = selectElm(".base-currency-down-arrow-icon");
 
+const baseCurrencyCountryOptionsContainer = selectElm(
+  ".base-currency-country-options"
+);
+
 const chooseSectionSelectedTargetCurrencyContainer = selectElm(
   ".selected-target-currency"
 );
@@ -22,6 +26,11 @@ const chooseSectionTargetCurrencyCountryName = selectElm(
   ".target-currency-country-name"
 );
 const targetCurrencyArrowIcon = selectElm(".target-currency-down-arrow-icon");
+
+const targetCurrencyCountryOptionsContainer = selectElm(
+  ".target-currency-country-options"
+);
+
 const checkBtnContainer = selectElm(".check-button-container");
 const checkBtn = selectElm(".check-btn");
 
@@ -67,6 +76,7 @@ export {
   backBtn,
   backBtnContainer,
   baseCurrencyArrowIcon,
+  baseCurrencyCountryOptionsContainer,
   baseCurrencyInput,
   baseCurrencyName,
   baseCurrencySymbol,
@@ -85,6 +95,7 @@ export {
   convertSectionTargetCurrencyFlagImg,
   currencyConvertContainer,
   targetCurrencyArrowIcon,
+  targetCurrencyCountryOptionsContainer,
   targetCurrencyInput,
   targetCurrencyName,
   targetCurrencySymbol,

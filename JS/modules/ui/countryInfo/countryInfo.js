@@ -1,4 +1,5 @@
-export default function countryInfo({ type, flagUrl, countryName }) {
+export default function countryInfoMarkUp({ type, data }) {
+  const { flagUrl, countryName } = data;
   return type === "base"
     ? `<div>
       <img
