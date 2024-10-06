@@ -11,6 +11,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  position: relative;
   background: linear-gradient(
     45deg,
     #dcf9fd,
@@ -53,7 +54,8 @@ body {
   color: #0284c7;
 }
 
-.choose-country-section {
+.choose-country-section,
+.currency-convert-section {
   height: 40%;
 }
 
@@ -130,14 +132,16 @@ body {
   border-bottom: 1px solid #aba5a5;
 }
 
-.check-button-container {
+.check-button-container,
+.back-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 }
 
-.check-btn {
+.check-btn,
+.back-btn {
   background-color: #0284c7;
   color: #fff;
   font-family: var(--primary-font);
@@ -152,11 +156,69 @@ body {
   transition: box-shadow 1s;
 }
 
-.check-btn:hover {
+.check-btn:hover,
+.back-btn:hover {
   box-shadow: none;
 }
 
 .money-exchange-image {
+  display: none;
+}
+
+.toast-message-container {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%);
+  background-color: red;
+  color: #fff;
+  width: 70vw;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 8px;
+  visibility: hidden;
+  scale: 0;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.currency-input-section {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+}
+
+.currency-symbol {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.currency-input-section > input {
+  width: 100%;
+  align-self: stretch;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: #fdfcfc;
+  box-shadow: -3px -3px 3px inset #e8ecec;
+}
+
+.currency-convert-section {
+  display: none;
+}
+
+.back-button-container {
   display: none;
 }
 
@@ -170,7 +232,8 @@ body {
     margin: 20px auto;
   }
 
-  .choose-country-section {
+  .choose-country-section,
+  .currency-convert-section {
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -198,9 +261,14 @@ body {
     width: 18vw;
   }
 
-  .check-btn {
+  .check-btn,
+  .back-btn {
     font-size: 1rem;
     padding: 18px 35px;
+  }
+
+  .currency-convert-section {
+    display: none;
   }
 }
 
@@ -246,12 +314,18 @@ body {
     width: 10vw;
   }
 
-  .check-btn {
+  .check-btn,
+  .back-btn {
     font-size: 1.4rem;
     padding: 25px 55px;
     border-radius: 50px;
   }
+  .toast-message-container {
+    width: 50vw;
+  }
 }
+
+/* @media (min-width) */
 
 @media (min-width: 1024px) {
   .title-logo img {
@@ -309,9 +383,14 @@ body {
     height: 50px;
   }
 
-  .check-btn {
+  .check-btn,
+  .back-btn {
     font-size: 1rem;
     padding: 15px 35px;
     border-radius: 50px;
+  }
+
+  .toast-message-container {
+    width: 30vw;
   }
 }

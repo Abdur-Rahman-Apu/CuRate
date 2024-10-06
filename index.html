@@ -91,8 +91,53 @@
         <div class="check-button-container">
             <button class="check-btn">Check Rate</button>
         </div>
+
+        <div class="currency-convert-section">
+            <div class="base-currency">
+                <p class="currency-label">Base currency</p>
+                <div class="selected-base-currency">
+                    <img src="https://flagcdn.com/w320/us.png"
+                        alt="This image is indicating the selected base currency's country flag image"
+                        class="base-currency-flag-image">
+                    <p class="base-currency-country-name">USD</p>
+                    <div class="currency-input-section">
+                        <p class="currency-symbol">$</p>
+                        <input type="text" name="base-currency-value" id="base-currency-input" placeholder="$000">
+                    </div>
+                    <!-- <i class="fa-solid fa-caret-down base-currency-down-arrow-icon"></i> -->
+                </div>
+
+            </div>
+
+            <img src="./assets/images/currency-exchange.png" alt="This image is indicating the money exchange"
+                class="money-exchange-image">
+
+            <div class="target-currency">
+                <p class="currency-label">Target currency</p>
+                <div class="selected-target-currency">
+                    <img src="https://flagcdn.com/w320/bd.png"
+                        alt="This image is indicating the selected target currency's country flag image"
+                        class="target-currency-flag-image">
+                    <p class="target-currency-country-name">BDT</p>
+                    <div class="currency-input-section">
+                        <p class="currency-symbol">$</p>
+                        <input type="text" name="target-currency-value" id="target-currency-input" placeholder="$000">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="back-button-container">
+            <button class="back-btn">Go Back</button>
+        </div>
     </section>
 
+
+    <!-- toast message  -->
+    <div class="toast-message-container">
+        <p class="toast-message">Currency rate get successfully</p>
+    </div>
 
     <script src="./JS/app.js" type="module"></script>
 </body>
