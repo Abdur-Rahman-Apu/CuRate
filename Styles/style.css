@@ -94,7 +94,9 @@ body {
   object-fit: cover;
 }
 .base-currency-country-name,
-.target-currency-country-name {
+.target-currency-country-name,
+.base-currency-name,
+.target-currency-name {
   font-family: var(--primary-font);
   font-weight: 500;
   font-size: 1.1rem;
@@ -247,7 +249,9 @@ body {
   }
 
   .base-currency-country-name,
-  .target-currency-country-name {
+  .target-currency-country-name,
+  .base-currency-name,
+  .target-currency-name {
     font-size: 1.2rem;
   }
 
@@ -301,7 +305,9 @@ body {
   }
 
   .base-currency-country-name,
-  .target-currency-country-name {
+  .target-currency-country-name,
+  .base-currency-name,
+  .target-currency-name {
     font-size: 1.5rem;
   }
 
@@ -356,7 +362,9 @@ body {
   }
 
   .base-currency-country-name,
-  .target-currency-country-name {
+  .target-currency-country-name,
+  .base-currency-name,
+  .target-currency-name {
     font-size: 1.2rem;
   }
 
