@@ -1,4 +1,5 @@
 import {
+  backBtn,
   baseCurrencyCountryOptionsContainer,
   checkBtn,
   chooseSectionSelectedBaseCurrencyContainer,
@@ -10,6 +11,7 @@ import handleToggleBaseCountriesList from "../handlers/chooseCountry/base/handle
 import handleCheckRateBtn from "../handlers/chooseCountry/checkBtn/handleCheckRateBtn.js";
 import handleSelectTargetCountry from "../handlers/chooseCountry/target/handleSelectTargetCountry.js";
 import handleToggleTargetCountriesList from "../handlers/chooseCountry/target/handleToggleTargetCountriesList.js";
+import handleBackButton from "../handlers/currencyConvert/backButton/handleBackButton.js";
 import { eventListener } from "../utilities/dom/dom.js";
 
 export default function runEventListeners() {
@@ -37,4 +39,6 @@ export default function runEventListeners() {
     handleSelectTargetCountry
   );
   eventListener(checkBtn, "click", handleCheckRateBtn);
+
+  eventListener(backBtn, "click", handleBackButton);
 }
