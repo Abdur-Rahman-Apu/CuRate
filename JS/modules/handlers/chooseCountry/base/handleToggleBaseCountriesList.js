@@ -6,7 +6,7 @@ import openBaseCountryOptions from "../../../ui/countryOptions/base/openBaseCoun
 import toggleArrowIcon from "../../../utilities/arrowIcon/toggleArrowIcon.js";
 import { updateSingleSettingsData } from "../../../utilities/updateConfigData/updateConfigData.js";
 
-export default function handleSelectedBaseCountry(e) {
+export default function handleToggleBaseCountriesList() {
   console.log("click");
 
   const {

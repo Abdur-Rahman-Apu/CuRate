@@ -6,7 +6,7 @@ import openTargetCountryOptions from "../../../ui/countryOptions/target/openTarg
 import toggleArrowIcon from "../../../utilities/arrowIcon/toggleArrowIcon.js";
 import { updateSingleSettingsData } from "../../../utilities/updateConfigData/updateConfigData.js";
 
-export default function handleSelectedTargetCountry(e) {
+export default function handleToggleTargetCountriesList(e) {
   const {
     settings: { isTargetCountriesOpen },
   } = currencyAppData;

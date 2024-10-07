@@ -1,15 +1,19 @@
 const currencyAppData = {
   base: {
     countryName: null,
-    countryFlag: null,
+    flagUrl: null,
     currencyName: null,
     currencySymbol: null,
   },
   target: {
     countryName: null,
-    countryFlag: null,
+    flagUrl: null,
     currencyName: null,
     currencySymbol: null,
+  },
+  rate: {
+    base: null,
+    target: null,
   },
   settings: {
     isBaseCountriesOpen: false,

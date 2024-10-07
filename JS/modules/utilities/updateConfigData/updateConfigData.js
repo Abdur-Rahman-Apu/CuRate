@@ -3,14 +3,14 @@ import currencyAppData from "../../config/config.js";
 const updateSingleBaseCountryData = ({ property, value }) => {
   currencyAppData.base[property] = value;
 };
-const updateAllBaseCountryData = ({ data }) => {
+const updateAllBaseCountryData = (data) => {
   currencyAppData.base = { ...currencyAppData.base, ...data };
 };
 
 const updateSingleTargetCountryData = ({ property, value }) => {
   currencyAppData.target[property] = value;
 };
-const updateAllTargetCountryData = ({ data }) => {
+const updateAllTargetCountryData = (data) => {
   currencyAppData.target = { ...currencyAppData.base, ...data };
 };
 
@@ -19,7 +19,7 @@ const updateSingleSettingsData = ({ property, value }) => {
   currencyAppData.settings[property] = value;
 };
 
-const updateAllSettingsData = ({ data }) => {
+const updateAllSettingsData = (data) => {
   currencyAppData.settings = { ...currencyAppData.settings, ...data };
 };
 
