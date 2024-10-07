@@ -23,11 +23,27 @@ const updateAllSettingsData = (data) => {
   currencyAppData.settings = { ...currencyAppData.settings, ...data };
 };
 
+const updateSingleRateData = ({ property, value }) => {
+  console.log(property, value);
+  currencyAppData.rate[property] = value;
+};
+
+const updateAllRateData = (data) => {
+  currencyAppData.rate = { ...currencyAppData.rate, ...data };
+};
+
+const updatePageNo = (no) => {
+  currencyAppData.page = no;
+};
+
 export {
   updateAllBaseCountryData,
+  updateAllRateData,
   updateAllSettingsData,
   updateAllTargetCountryData,
+  updatePageNo,
   updateSingleBaseCountryData,
+  updateSingleRateData,
   updateSingleSettingsData,
   updateSingleTargetCountryData,
 };

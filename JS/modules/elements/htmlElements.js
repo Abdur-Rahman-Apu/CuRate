@@ -1,6 +1,7 @@
 import { selectElm } from "../utilities/dom/dom.js";
 
 const chooseCountryContainer = selectElm(".choose-country-section");
+
 const chooseSectionSelectedBaseCurrencyContainer = selectElm(
   ".selected-base-currency"
 );
@@ -32,6 +33,7 @@ const targetCurrencyCountryOptionsContainer = selectElm(
 );
 
 const checkBtnContainer = selectElm(".check-button-container");
+
 const checkBtn = selectElm(".check-btn");
 
 const currencyConvertContainer = selectElm(".currency-convert-section");
@@ -49,7 +51,7 @@ const baseCurrencySymbol = selectElm(
   ".selected-base-currency .currency-symbol"
 );
 const baseCurrencyInput = selectElm(
-  ".selected-base-currency .base-currency-input"
+  ".selected-base-currency #base-currency-input"
 );
 const convertSectionTargetCurrencyContainer = selectElm(
   ".currency-convert-section .selected-target-currency"
@@ -64,7 +66,7 @@ const targetCurrencySymbol = selectElm(
   ".selected-target-currency .currency-symbol"
 );
 const targetCurrencyInput = selectElm(
-  ".selected-target-currency .target-currency-input"
+  ".selected-target-currency #target-currency-input"
 );
 
 const backBtnContainer = selectElm(".back-button-container");

@@ -12,13 +12,14 @@ const currencyAppData = {
     currencySymbol: "৳",
   },
   rate: {
-    base: null,
+    base: 1,
     target: null,
   },
   settings: {
     isBaseCountriesOpen: false,
     isTargetCountriesOpen: false,
   },
+  page: 1,
 };
 
 export default currencyAppData;
