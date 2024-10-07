@@ -1,5 +1,6 @@
 import currencyAppData from "../../../config/config.js";
 import { setDataIntoDB } from "../../../db/db.js";
+import { checkBtn } from "../../../elements/htmlElements.js";
 import openCurrencyConvertSection from "../../../ui/currencyConvert/toogleCurrencyConvertSection/openCurrencyConvertSection.js";
 import showToast from "../../../ui/toast/showToast.js";
 import fetchData from "../../../utilities/fetchData/fetchData.js";
@@ -9,6 +10,7 @@ import {
 } from "../../../utilities/updateConfigData/updateConfigData.js";
 
 export default async function handleCheckRateBtn() {
+  checkBtn.innerText = "Loading...";
   try {
     const data = await fetchData();
 
@@ -41,4 +43,6 @@ export default async function handleCheckRateBtn() {
     console.log(err);
     showToast({ message: err.message ?? "Data fetch error", type: "error" });
   }
+
+  checkBtn.innerText = "Check Rate";
 }
