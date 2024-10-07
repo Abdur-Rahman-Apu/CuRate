@@ -26,113 +26,147 @@
 <body>
 
     <section class="container">
+        <!-- title & logo  -->
         <div class="title-logo">
             <img src="./assets/images/curate-logo.png" alt="This image is the logo of the website">
             <p class="title">Cu<span>Rate</span></p>
         </div>
 
+
+        <!-- page 1 : choose country start -->
+
+        <!-- choose country section start  -->
         <div class="choose-country-section">
+
+            <!-- base currency part start  -->
             <div class="base-currency">
                 <p class="currency-label">Base currency</p>
+
+                <!-- selected base currency details  -->
                 <div class="selected-base-currency">
+                    <!-- flag image  -->
                     <img src="https://flagcdn.com/w320/us.png"
                         alt="This image is indicating the selected base currency's country flag image"
                         class="base-currency-flag-image">
+
+                    <!-- country name  -->
                     <p class="base-currency-country-name">United States</p>
 
+                    <!-- arrow icon  -->
                     <i class="fa-solid fa-caret-down base-currency-down-arrow-icon"></i>
                 </div>
-                <div class="base-currency-country-options">
-                    <!-- <div>
-                        <img src="https://flagcdn.com/w320/us.png"
-                            alt="This image is indicating the selected base currency's country flag image"
-                            class="base-currency-flag-image">
-                        <p class="base-currency-country-name">United States</p>
-                    </div>
-                    <div>
-                        <img src="https://flagcdn.com/w320/bd.png"
-                            alt="This image is indicating the selected target currency's country flag image"
-                            class="target-currency-flag-image">
-                        <p class="target-currency-country-name">Bangladesh</p>
-                    </div> -->
-                </div>
-            </div>
 
+                <!-- base countries list will be showed here  -->
+                <div class="base-currency-country-options"></div>
+            </div>
+            <!-- base currency part end  -->
+
+            <!-- middle of the page: money exchange image  -->
             <img src="./assets/images/currency-exchange.png" alt="This image is indicating the money exchange"
                 class="money-exchange-image">
 
+            <!-- target currency part start  -->
             <div class="target-currency">
                 <p class="currency-label">Target currency</p>
+
+                <!-- target country details  -->
                 <div class="selected-target-currency">
+
+                    <!-- flag image -->
                     <img src="https://flagcdn.com/w320/bd.png"
                         alt="This image is indicating the selected target currency's country flag image"
                         class="target-currency-flag-image">
+
+                    <!-- country name  -->
                     <p class="target-currency-country-name">Bangladesh</p>
 
+                    <!-- arrow icon  -->
                     <i class="fa-solid fa-caret-down target-currency-down-arrow-icon"></i>
                 </div>
-                <div class="target-currency-country-options">
-                    <!-- <div>
-                        <img src="https://flagcdn.com/w320/us.png"
-                            alt="This image is indicating the selected base currency's country flag image"
-                            class="target-currency-flag-image">
-                        <p class="target-currency-country-name">United States</p>
-                    </div>
-                    <div>
-                        <img src="https://flagcdn.com/w320/bd.png"
-                            alt="This image is indicating the selected target currency's country flag image"
-                            class="target-currency-flag-image">
-                        <p class="target-currency-country-name">Bangladesh</p>
-                    </div> -->
-                </div>
+                <!-- target country part end  -->
+
+                <!-- target countries list will be showed here  -->
+                <div class="target-currency-country-options"></div>
             </div>
+            <!-- target currency part end  -->
         </div>
+        <!-- choose country section end  -->
 
         <div class="check-button-container">
             <button class="check-btn">Check Rate</button>
         </div>
 
+        <!-- page 1 : choose country end -->
+
+
+        <!-- page 2 : currency convert start -->
+
+        <!-- currency convert section start  -->
         <div class="currency-convert-section">
+
+            <!-- base currency part start  -->
             <div class="base-currency">
                 <p class="currency-label">Base currency</p>
+
+                <!-- base currency details start  -->
                 <div class="selected-base-currency">
+
+                    <!-- flag image  -->
                     <img src="https://flagcdn.com/w320/us.png"
                         alt="This image is indicating the selected base currency's country flag image"
                         class="base-currency-flag-image">
+                    <!-- currency name  -->
                     <p class="base-currency-name">USD</p>
+
+                    <!-- currency value  -->
                     <div class="currency-input-section">
                         <p class="currency-symbol">$</p>
                         <input type="number" name="base-currency-value" id="base-currency-input" placeholder="$000"
                             min="1">
                     </div>
-                    <!-- <i class="fa-solid fa-caret-down base-currency-down-arrow-icon"></i> -->
+
                 </div>
-
+                <!-- base currency details end  -->
             </div>
+            <!-- base currency part end  -->
 
+            <!-- middle image: money exchange image  -->
             <img src="./assets/images/currency-exchange.png" alt="This image is indicating the money exchange"
                 class="money-exchange-image">
 
+            <!-- target currency part start  -->
             <div class="target-currency">
                 <p class="currency-label">Target currency</p>
+
+                <!-- target currency details start  -->
                 <div class="selected-target-currency">
+
+                    <!-- flag image  -->
                     <img src="https://flagcdn.com/w320/bd.png"
                         alt="This image is indicating the selected target currency's country flag image"
                         class="target-currency-flag-image">
+
+                    <!-- currency name  -->
                     <p class="target-currency-name">BDT</p>
+
+                    <!-- currency value  -->
                     <div class="currency-input-section">
                         <p class="currency-symbol">$</p>
                         <input type="number" name="target-currency-value" id="target-currency-input" placeholder="$000"
                             min="1">
                     </div>
                 </div>
-
+                <!-- target currency details end -->
             </div>
+            <!-- target currency part end  -->
         </div>
+        <!-- currency convert section end  -->
 
         <div class="back-button-container">
             <button class="back-btn">Go Back</button>
         </div>
+
+        <!-- page 2 : currency convert end -->
     </section>
 
 
