@@ -28,6 +28,7 @@ export default function runEventListeners() {
     "click",
     handleSelectBaseCountry
   );
+
   eventListener(
     targetCurrencyCountryOptionsContainer,
     "click",

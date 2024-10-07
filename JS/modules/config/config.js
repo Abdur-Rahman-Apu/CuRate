@@ -1,15 +1,15 @@
 const currencyAppData = {
   base: {
-    countryName: null,
-    flagUrl: null,
-    currencyName: null,
-    currencySymbol: null,
+    countryName: "United States",
+    flagUrl: "https://flagcdn.com/w320/us.png",
+    currencyName: "USD",
+    currencySymbol: "$",
   },
   target: {
-    countryName: null,
-    flagUrl: null,
-    currencyName: null,
-    currencySymbol: null,
+    countryName: "Bangladesh",
+    flagUrl: "https://flagcdn.com/w320/bd.png",
+    currencyName: "BDT",
+    currencySymbol: "৳",
   },
   rate: {
     base: null,
