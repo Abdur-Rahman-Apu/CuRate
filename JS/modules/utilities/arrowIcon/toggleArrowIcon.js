@@ -3,6 +3,7 @@ const toggleIconClass = ({ targetElm, rmvCls, addCls }) => {
   targetElm.classList.add(addCls);
 };
 
+// toggle arrow icon on show and hide countries list
 export default function toggleArrowIcon({ targetElm, iconType }) {
   const upIconClass = "fa-caret-up";
   const downIconClass = "fa-caret-down";

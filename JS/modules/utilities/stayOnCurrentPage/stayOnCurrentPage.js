@@ -5,16 +5,22 @@ import closeCurrencyConvertSection from "../../ui/currencyConvert/toogleCurrency
 import openCurrencyConvertSection from "../../ui/currencyConvert/toogleCurrencyConvertSection/openCurrencyConvertSection.js";
 
 export default function stayOnCurrentPage() {
+  // get page no from the storage
   const { page } = getDataFromDB();
-  console.log(page);
 
   if (page === 1) {
+    // open choose section
     openCountryChooseSection();
 
+    // hide convert section
     closeCurrencyConvertSection();
   } else {
+    // page 2
+
+    // close choose section
     closeCountryChooseSection();
 
+    // open convert section
     openCurrencyConvertSection();
   }
 }

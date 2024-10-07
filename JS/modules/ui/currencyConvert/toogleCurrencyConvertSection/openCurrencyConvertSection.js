@@ -7,10 +7,13 @@ import closeCountryChooseSection from "../../countryOptions/toogleCountryChooseS
 import updateCurrencyConvertPage from "../updateCurrencyConvertPage/updateCurrencyConvertPage.js";
 
 export default function openCurrencyConvertSection() {
+  // close choose section
   closeCountryChooseSection();
 
+  // open convert section
   addStyle(currencyConvertContainer, { display: "flex" });
   addStyle(backBtnContainer, { display: "flex" });
 
+  // update the convert page UI
   updateCurrencyConvertPage();
 }

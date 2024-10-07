@@ -4,10 +4,9 @@ import { addStyle } from "../../../utilities/dom/dom.js";
 import showBaseCountriesList from "./showBaseCountriesList.js";
 
 export default function openBaseCountryOptions() {
-  console.log("open base country");
-
   const countriesInfoToShow = filterCountryName();
 
+  // show base countries
   showBaseCountriesList(countriesInfoToShow);
 
   addStyle(baseCurrencyCountryOptionsContainer, { display: "block" });

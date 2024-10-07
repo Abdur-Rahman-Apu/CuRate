@@ -7,11 +7,18 @@ import {
 } from "../../../utilities/updateConfigData/updateConfigData.js";
 
 export default function handleBackButton() {
+  // Go back to the page 1
+
+  //   update page no and target rate value into the config data
   updatePageNo(1);
   updateSingleRateData({ property: "target", value: null });
+
+  //   update the storage
   setDataIntoDB();
 
+  //   close the convert section
   closeCurrencyConvertSection();
 
+  //   open the choose section
   openCountryChooseSection();
 }

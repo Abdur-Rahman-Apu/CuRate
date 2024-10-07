@@ -5,17 +5,19 @@ import { updateAllBaseCountryData } from "../../../utilities/updateConfigData/up
 import handleToggleBaseCountriesList from "./handleToggleBaseCountriesList.js";
 
 export default function handleSelectBaseCountry(e) {
-  console.log("select");
-  console.log(e.target.dataset.name);
   const countryName = e.target.dataset.name;
 
   const countryDetails = findCountryInfo(countryName);
 
+  //   update the config
   updateAllBaseCountryData(countryDetails);
 
+  //   update the storage
   setDataIntoDB();
 
+  //   toggle the options part
   handleToggleBaseCountriesList();
 
+  //   update the UI of the base part
   setNewBaseCountry();
 }

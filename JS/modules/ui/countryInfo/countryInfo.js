@@ -1,3 +1,5 @@
+// html markup to add base and target options part country info
+
 export default function countryInfoMarkUp({ type, data }) {
   const { flagUrl, countryName } = data;
   return type === "base"

@@ -6,5 +6,6 @@ export default function showBaseCountriesList(countries) {
     .map((country) => countryInfoMarkUp({ type: "base", data: country }))
     .join("");
 
+  // added countries into the base options part
   baseCurrencyCountryOptionsContainer.innerHTML = markUp;
 }

@@ -1,6 +1,7 @@
 import currencyAppData from "../../config/config.js";
 import showToast from "../../ui/toast/showToast.js";
 
+// fetch data from the API
 export default async function fetchData() {
   const {
     base: { currencyName: baseCurName },
@@ -14,6 +15,7 @@ export default async function fetchData() {
     const result = await res.json();
     return result;
   } catch (err) {
+    // show toast message for the error event
     showToast({ message: err.message, type: "error" });
   }
 }

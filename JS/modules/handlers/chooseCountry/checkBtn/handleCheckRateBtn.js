@@ -10,39 +10,49 @@ import {
 } from "../../../utilities/updateConfigData/updateConfigData.js";
 
 export default async function handleCheckRateBtn() {
+  // change the check button text
   checkBtn.innerText = "Loading...";
+
+  //   fetch data from the API
   try {
     const data = await fetchData();
 
-    console.log(data);
-
+    // handled error response
     if (!data?.success) {
       showToast({ message: data?.error ?? "Network error", type: "error" });
       return;
     }
 
+    // handled success response
     if (data?.success) {
       const {
         target: { currencyName: targetCurName },
       } = currencyAppData;
+
       const { rates } = data;
 
+      // get target currency rate
       const targetRate = rates[targetCurName];
 
+      //   update the config
       updateSingleRateData({ property: "target", value: targetRate });
 
       updatePageNo(2);
 
+      //   update the storage
       setDataIntoDB();
 
+      //   open convert section
       openCurrencyConvertSection();
 
+      //   show success message
       showToast({ message: "Currency Rate Received", type: "success" });
     }
   } catch (err) {
-    console.log(err);
+    // show error message
     showToast({ message: err.message ?? "Data fetch error", type: "error" });
   }
 
+  //   update text of the check button
   checkBtn.innerText = "Check Rate";
 }

@@ -14,20 +14,29 @@ export default function handleToggleTargetCountriesList(e) {
   if (isTargetCountriesOpen) {
     // close base countries options
     toggleArrowIcon({ targetElm: targetCurrencyArrowIcon, iconType: "down" });
+
+    // close the options part
     closeTargetCountryOptions();
+
+    // update the config data
     updateSingleSettingsData({
       property: "isTargetCountriesOpen",
       value: false,
     });
-    setDataIntoDB();
   } else {
     //   open base countries options
     toggleArrowIcon({ targetElm: targetCurrencyArrowIcon, iconType: "up" });
+
+    // open the options part
     openTargetCountryOptions();
+
+    // update the config
     updateSingleSettingsData({
       property: "isTargetCountriesOpen",
       value: true,
     });
-    setDataIntoDB();
   }
+
+  // update the storage
+  setDataIntoDB();
 }

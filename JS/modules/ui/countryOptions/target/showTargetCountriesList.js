@@ -6,5 +6,6 @@ export default function showTargetCountriesList(countries) {
     .map((country) => countryInfoMarkUp({ type: "base", data: country }))
     .join("");
 
+  //  added countries into the target country options part
   targetCurrencyCountryOptionsContainer.innerHTML = markUp;
 }

@@ -7,8 +7,6 @@ import toggleArrowIcon from "../../../utilities/arrowIcon/toggleArrowIcon.js";
 import { updateSingleSettingsData } from "../../../utilities/updateConfigData/updateConfigData.js";
 
 export default function handleToggleBaseCountriesList() {
-  console.log("click");
-
   const {
     settings: { isBaseCountriesOpen },
   } = currencyAppData;
