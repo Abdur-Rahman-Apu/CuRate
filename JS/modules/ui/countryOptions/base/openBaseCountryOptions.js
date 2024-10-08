@@ -9,5 +9,7 @@ export default function openBaseCountryOptions() {
   // show base countries
   showBaseCountriesList(countriesInfoToShow);
 
-  addStyle(baseCurrencyCountryOptionsContainer, { display: "block" });
+  addStyle(baseCurrencyCountryOptionsContainer, {
+    display: "block",
+  });
 }

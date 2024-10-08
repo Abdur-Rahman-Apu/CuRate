@@ -60,6 +60,8 @@ body {
 /* choose country and convert currency section */
 .choose-country-section,
 .currency-convert-section {
+  display: flex;
+  flex-direction: column;
   height: 40%;
 }
 
@@ -161,6 +163,7 @@ body {
   outline: none;
   cursor: pointer;
   transition: box-shadow 1s;
+  margin-top: 10px;
 }
 
 .check-btn:hover,
@@ -170,29 +173,6 @@ body {
 
 .money-exchange-image {
   display: none;
-}
-
-.toast-message-container {
-  position: absolute;
-  left: 50%;
-  top: 2%;
-  transform: translate(-50%);
-  background-color: red;
-  color: #fff;
-  width: 70vw;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: var(--primary-font);
-  font-size: 0.9rem;
-  font-weight: 500;
-  padding: 5px;
-  border-radius: 8px;
-  visibility: hidden;
-  scale: 0;
-  opacity: 0;
-  transition: all 1s;
 }
 
 .currency-input-section {
@@ -227,6 +207,29 @@ body {
 
 .back-button-container {
   display: none;
+}
+
+.toast-message-container {
+  position: absolute;
+  left: 50%;
+  top: 2%;
+  transform: translate(-50%);
+  background-color: red;
+  color: #fff;
+  width: 70vw;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 8px;
+  visibility: hidden;
+  scale: 0;
+  opacity: 0;
+  transition: all 1s;
 }
 
 /* custom scroll bar  */
@@ -352,6 +355,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .toast-message-container {
     width: 50vw;
+    font-size: 1rem;
   }
 }
 
@@ -422,5 +426,82 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .toast-message-container {
     width: 30vw;
+    font-size: 1rem;
+  }
+}
+
+@media (min-height: 1200px) {
+  .title-logo img {
+    width: 35vw;
+  }
+
+  .title {
+    font-size: 3.9rem;
+  }
+
+  .base-currency,
+  .target-currency {
+    width: 80%;
+  }
+
+  .currency-label {
+    font-size: 1.2rem;
+  }
+
+  .selected-base-currency,
+  .selected-target-currency {
+    height: 60px;
+  }
+
+  .base-currency-flag-image,
+  .target-currency-flag-image {
+    width: 10vw;
+  }
+
+  .base-currency-country-name,
+  .target-currency-country-name,
+  .base-currency-name,
+  .target-currency-name {
+    font-size: 1.7rem;
+  }
+
+  .base-currency-country-options > div,
+  .target-currency-country-options > div {
+    height: 60px;
+  }
+
+  .money-exchange-image {
+    width: 10vw;
+  }
+
+  .base-currency-country-options,
+  .target-currency-country-options {
+    background-color: #dfe6e9;
+  }
+  .target-currency-country-options {
+    top: -150px;
+    box-shadow: -3px -3px 3px #c7d1d3;
+  }
+
+  .base-currency-country-options > div,
+  .target-currency-country-options > div {
+    height: 50px;
+  }
+
+  .check-btn,
+  .back-btn {
+    font-size: 1.5rem;
+    padding: 20px 65px;
+    border-radius: 50px;
+  }
+
+  .currency-input-section > input {
+    font-size: 1.5rem;
+  }
+
+  .toast-message-container {
+    width: 50vw;
+    height: 60px;
+    font-size: 1.5rem;
   }
 }
